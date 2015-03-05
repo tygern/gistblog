@@ -23,7 +23,7 @@ angular
         controller: "PostListCtrl"
       })
       .state('post', {
-        url: "/posts/:id",
+        url: "/posts/:title",
         templateUrl: "views/post.html",
         controller: "PostCtrl"
       });

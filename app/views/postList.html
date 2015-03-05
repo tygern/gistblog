@@ -3,9 +3,7 @@
   <h4 class="subheader">Code and math</h4>
 </header>
 
+<div ng-if="!postContent"></div>
 <ul>
-  <li ng-repeat="post in posts">{{post.name}}</li>
+  <li ng-repeat="post in posts" ui-sref="post({title: post.name})">{{post.name}}</li>
 </ul>
-
-
-<a ui-sref="post({id: 123})">post</a>

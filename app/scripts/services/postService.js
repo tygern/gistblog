@@ -5,8 +5,12 @@ angular.module('gistblogApp')
     function getList() {
       return $http.get('https://api.github.com/repos/tygern/blog-posts/contents/posts/')
     }
+    function get(title) {
+      return $http.get('https://api.github.com/repos/tygern/blog-posts/contents/posts/' + title)
+    }
 
     return {
-      getList: getList
+      getList: getList,
+      get: get
     }
   });
