@@ -18,10 +18,6 @@ header h4 {
   font-size: 1.4375rem;
 }
 
-header h1, header h4 {
-  margin-left: 20px;
-}
-
 h2 {
   font-weight: bold;
   font-size: 2rem;
@@ -44,7 +40,7 @@ pre {
   width: 80px;
   min-width: 80px;
   background-color: #36A168;
-  display: inline-block;
+  display: none; /* hide for small screens */
 }
 
 .logo:after {
@@ -63,6 +59,16 @@ pre {
   font-size: 90px;
   top: 53px;
   left: 26px;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .logo {
+    display: inline-block;
+  }
+
+  header h1, header h4 {
+    margin-left: 20px;
+  }
 }
 
 .posts {
