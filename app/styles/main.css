@@ -35,6 +35,10 @@ a {
   color: #36A168;
 }
 
+pre {
+  margin-bottom: 1.25rem;
+}
+
 .logo {
   height: 80px;
   width: 80px;
