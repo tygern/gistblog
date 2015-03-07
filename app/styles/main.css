@@ -56,7 +56,6 @@ pre {
   line-height: 0;
   top: 42px;
   left: 23px;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .logo.back:after {
@@ -91,14 +90,9 @@ pre {
 }
 
 .posts li:before {
-  content: '≃';
-  font-size: 1.3em;
+  content: '+';
+  font-weight: bold;
   color: #36A168;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.post-body {
-  /*padding-top: 2em;*/
 }
 
 .vertical-center {
