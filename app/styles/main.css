@@ -1,6 +1,8 @@
 body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  height: auto;
+  min-height: 100%;
 }
 
 * {
@@ -8,8 +10,21 @@ body {
 }
 
 header {
+  margin-top: 1em;
   margin-bottom: 1.5em;
   cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  border-top: 2px solid #6f6f6f;
+  color: #6f6f6f;
+  padding: .7em 1em 0;
 }
 
 header h1 {
@@ -27,16 +42,16 @@ h2 {
   font-size: 2rem;
 }
 
-.container {
-  margin: 1em 0 1em;
-}
-
 a {
   color: #36A168;
 }
 
 pre {
   margin-bottom: 1.25rem;
+}
+
+.container {
+  padding-bottom: 120px;
 }
 
 .logo {
@@ -74,8 +89,8 @@ pre {
     margin-left: 20px;
   }
 
-  .container {
-    margin: 5em 0 3em;
+  header {
+    margin-top: 5em;
   }
 }
 
