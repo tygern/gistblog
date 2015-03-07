@@ -10,6 +10,11 @@ header {
 header h1 {
   font-weight: bold;
   color: #36A168;
+  font-size: 2.75rem;
+}
+
+header h4 {
+  font-size: 1.4375rem;
 }
 
 header h1, header h4 {
@@ -32,6 +37,7 @@ a {
 .logo {
   height: 80px;
   width: 80px;
+  min-width: 80px;
   background-color: #36A168;
   display: inline-block;
 }
