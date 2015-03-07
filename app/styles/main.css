@@ -24,7 +24,7 @@ h2 {
 }
 
 .container {
-  margin: 5em 0 3em;
+  margin: 1em 0 1em;
 }
 
 a {
@@ -68,6 +68,10 @@ pre {
 
   header h1, header h4 {
     margin-left: 20px;
+  }
+
+  .container {
+    margin: 5em 0 3em;
   }
 }
 
