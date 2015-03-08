@@ -10,5 +10,5 @@
 
 <div ng-if="!postContent"></div>
 <ul class="posts">
-  <li ng-repeat="post in posts" ui-sref="post({title: post.name})"> {{post.name | gbTitle}}</li>
+  <li ng-repeat="post in posts | orderBy:'name':true" ui-sref="post({title: post.name})"> {{post.name | gbTitle}}</li>
 </ul>
