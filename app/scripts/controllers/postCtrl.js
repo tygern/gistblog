@@ -14,6 +14,4 @@ angular.module('gistblogApp')
       var postHtml = atob(result.data.content) + highlightScript;
       $scope.postContent = $sce.trustAsHtml(postHtml);
     });
-
-
   });

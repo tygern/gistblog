@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name gistblogApp
- * @description
- * # gistblogApp
- *
- * Main module of the application.
- */
 angular
   .module('gistblogApp', ['ui.router'])
   .config(function ($stateProvider, $urlRouterProvider) {
