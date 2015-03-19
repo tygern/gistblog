@@ -5,13 +5,15 @@ angular.module('gistblogApp')
     PostService.get($stateParams.title).then(function (result) {
       $scope.postName = result.data.name;
 
-      var highlightScript = '<script>' +
-        '_.each(angular.element(document).find("pre"), function (block) {' +
-          'hljs.highlightBlock(block);' +
-        '});' +
-        '</script>' ;
+      var postElement = angular.element(atob(result.data.content));
 
-      var postHtml = atob(result.data.content) + highlightScript;
-      $scope.postContent = $sce.trustAsHtml(postHtml);
+      _.each(postElement, function (element) {
+        if(element.tagName === 'PRE') {
+          hljs.highlightBlock(element);
+        }
+      });
+
+
+      angular.element(document.querySelector('#post-content')).append(postElement);
     });
   });
