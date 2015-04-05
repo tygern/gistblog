@@ -9,8 +9,12 @@
 </header>
 
 <div class="post-body">
-  <h2 ng-if="postName"> {{postName | gbTitle}} </h2>
+  <h2 ng-if="postName">
+    {{postName | gbTitle}}
+  </h2>
+  <h5 class="date" ng-if="postName">
+    {{postName | gbDate}}
+  </h5>
 
   <div id="post-content"></div>
-  <!--<div ng-if="postContent" ng-bind-html="postContent"></div>-->
 </div>
